@@ -15,9 +15,12 @@ The objective of this project is to build an automated system that can classify 
 **Dataset Preparation**
 
 The dataset contains **44,898** news samples with 4 columns.
-title, text, subject, date 
-as subject and date was not necessary we combined title and text into content column and created a label column
-so final dataset consists of
+title, text, subject, date .
+
+
+As subject and date columns were not necessary, I combined title and text into content column and created a label column, so final dataset consists of
+
+
 - content – combined news text (title+text column)
 - label – classification (0 = Fake, 1 = Real)
 
@@ -57,11 +60,11 @@ Training was performed using a trainer pipeline with batch training and evaluati
 
 **Reasons for choosing this model:**
 
-Faster than full BERT
-Lower memory usage
-High accuracy for NLP classification tasks
-The model was fine-tuned using the
-Transformer library.
+--Faster than full BERT
+--Lower memory usage
+--High accuracy for NLP classification tasks
+--The model was fine-tuned using the
+--Transformer library.
 
 
 
@@ -86,21 +89,27 @@ These metrics help measure how well the model correctly identifies fake and real
 
 **Model accuracy** -**100%**
 with 3 epochs 
+
+
 learning_rate=3e-5, 
+
+
 per_device_train_batch_size=16,
+
+
 per_device_eval_batch_size=16,
 
 
         
-Max Length	Accuracy
-256	        100% with 3 epochs
-512	        100% with 2 epochs
+Max Length     	Accuracy
+256	             100% with 3 epochs
+512	             100% with 2 epochs
 
 
 The model achieved 100% accuracy on the validation set, and no misclassified samples were found. This indicates that the model learned strong patterns in the dataset. However, perfect performance on a validation set may also indicate that the dataset is relatively easy or that the model may be slightly overfitting.
 
 
-## *Improvements**
+## **Improvements**
 
 - Several improvements were explored to enhance model performance:
 
