@@ -1,15 +1,15 @@
-Fake News Detection using BERT
-Problem Statement
+**Fake News Detection using BERT**
+**Problem Statement**
 
 The rapid spread of misinformation through online news platforms and social media has become a serious issue. Fake news can mislead the public, influence opinions, and create social and political instability. Manually verifying every news article is difficult and time-consuming.
 
 The objective of this project is to build an automated system that can classify news articles as Real or Fake using Natural Language Processing (NLP) and deep learning techniques.
 
-Approach
+**Approach**
 
 Dataset Preparation
 
-The dataset contains 44,898 news samples with two columns:
+The dataset contains **44,898** news samples with two columns:
 
 content – combined news text
 
@@ -17,63 +17,67 @@ label – classification (0 = Fake, 1 = Real)
 
 The dataset is balanced:
 
-Real News: 23,481
+**Real News**: 23,481
 
-Fake News: 21,417
+**Fake News**: 21,417
 
 No missing values were present.
 
-Preprocessing
+**Preprocessing**
 
 Text data was tokenized using a pretrained tokenizer.
 
-Maximum sequence length was set to 256 tokens.
+Maximum sequence length was set to **256** tokens.
 
 Dataset was split into training and testing sets.
 
-Model Training
+**Model Training**
 
 The pretrained transformer model was fine-tuned for binary text classification.
 
 Training was performed using a trainer pipeline with batch training and evaluation.
 
-Deployment
+**Deployment**
 
-The trained model was deployed using a simple web interface where users can input a news article and receive a prediction.
+The trained model was deployed using a simple gradio web interface where users can input a news article and receive a prediction.
 
-Model Used
+**Model Used**
 
 This project uses the pretrained transformer model
-DistilBERT
+**DistilBERT**
 for text classification.
 
-Reasons for choosing this model:
+**Reasons for choosing this model:**
 
 Faster than full BERT
-
 Lower memory usage
-
 High accuracy for NLP classification tasks
-
 The model was fine-tuned using the
-Transformers
-library.
+Transformer library.
 
-Evaluation Metrics
+**Evaluation Metrics**
 
 Model performance was evaluated using standard classification metrics:
 
-Accuracy
+**Accuracy**
 
-Precision
+**Precision**
 
-Recall
+**Recall**
 
-F1 Score
+**F1 Score**
+        precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      4247
+           1       1.00      1.00      1.00      4733
+
+    accuracy                           1.00      8980
+   macro avg       1.00      1.00      1.00      8980
+weighted avg       1.00      1.00      1.00      8980
 
 These metrics help measure how well the model correctly identifies fake and real news articles.
 
-Improvements
+**Improvements**
 
 Several improvements were explored to enhance model performance:
 
@@ -91,7 +95,7 @@ Testing with different dataset samples
 
 These experiments helped improve the model's classification capability and robustness.
 
-Key Learnings
+**Key Learnings**
 
 Through this project, the following concepts were learned:
 
