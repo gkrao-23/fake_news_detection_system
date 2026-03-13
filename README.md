@@ -14,7 +14,7 @@ The objective of this project is to build an automated system that can classify 
 
 **Dataset Preparation**
 
-The dataset contains **44,898** news samples with 4 columns.
+The dataset contains **44,898** news samples with 4 columns:
 title, text, subject, date .
 
 
@@ -101,9 +101,7 @@ per_device_eval_batch_size=16,
 
 
         
-Max Length     	Accuracy
-256	             100% with 3 epochs
-512	             100% with 2 epochs
+When Max Length was 256	, model achieved 100% Accuracy with 3 epochs and when it was 512 it achieved 100% Accuracy with only 2 epochs.
 
 
 The model achieved 100% accuracy on the validation set, and no misclassified samples were found. This indicates that the model learned strong patterns in the dataset. However, perfect performance on a validation set may also indicate that the dataset is relatively easy or that the model may be slightly overfitting.
