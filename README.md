@@ -1,9 +1,10 @@
 **Fake News Detection using BERT**
 **Problem Statement**
-
 The rapid spread of misinformation through online news platforms and social media has become a serious issue. Fake news can mislead the public, influence opinions, and create social and political instability. Manually verifying every news article is difficult and time-consuming.
 
 The objective of this project is to build an automated system that can classify news articles as Real or Fake using Natural Language Processing (NLP) and deep learning techniques.
+
+
 
 **Approach**
 
@@ -23,6 +24,8 @@ The dataset is balanced:
 
 No missing values were present.
 
+
+
 **Preprocessing**
 
 Text data was tokenized using a pretrained tokenizer.
@@ -31,15 +34,21 @@ Maximum sequence length was set to **256** tokens.
 
 Dataset was split into training and testing sets.
 
+
+
 **Model Training**
 
 The pretrained transformer model was fine-tuned for binary text classification.
 
 Training was performed using a trainer pipeline with batch training and evaluation.
 
+
+
 **Deployment**
 
 The trained model was deployed using a simple gradio web interface where users can input a news article and receive a prediction.
+
+
 
 **Model Used**
 
@@ -54,6 +63,8 @@ Lower memory usage
 High accuracy for NLP classification tasks
 The model was fine-tuned using the
 Transformer library.
+
+
 
 **Evaluation Metrics**
 
@@ -77,6 +88,8 @@ weighted avg       1.00      1.00      1.00      8980
 
 These metrics help measure how well the model correctly identifies fake and real news articles.
 
+
+
 **Improvements**
 
 Several improvements were explored to enhance model performance:
@@ -94,6 +107,8 @@ Fine-tuning transformer layers
 Testing with different dataset samples
 
 These experiments helped improve the model's classification capability and robustness.
+
+
 
 **Key Learnings**
 
