@@ -1,5 +1,5 @@
 **Fake News Detection using BERT**
-**Problem Statement**
+##Problem Statement
 The rapid spread of misinformation through online news platforms and social media has become a serious issue. Fake news can mislead the public, influence opinions, and create social and political instability. Manually verifying every news article is difficult and time-consuming.
 
 The objective of this project is to build an automated system that can classify news articles as Real or Fake using Natural Language Processing (NLP) and deep learning techniques.
