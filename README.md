@@ -75,15 +75,7 @@ Model performance was evaluated using standard classification metrics:
 **Accuracy**, **Precision**, **Recall**, **F1 Score**
 
 
-
-                  precision    recall  f1-score   support
-
-           0       1.00      1.00      1.00      4247
-           1       1.00      1.00      1.00      4733
-
-    accuracy        -          -       1.00      8980
-   macro avg       1.00      1.00      1.00      8980
-weighted avg       1.00      1.00      1.00      8980
+![Interface](images/classification%20report.png)
 
 These metrics help measure how well the model correctly identifies fake and real news articles.
 
@@ -105,7 +97,7 @@ When Max Length was 256	, model achieved 100% Accuracy with 3 epochs and when it
 
 
 The model achieved 100% accuracy on the validation set, and no misclassified samples were found. This indicates that the model learned strong patterns in the dataset. However, perfect performance on a validation set may also indicate that the dataset is relatively easy or that the model may be slightly overfitting.
-
+![Interface](images/model%20training%20when%20max%20length=256.png)
 
 ## **Improvements**
 
@@ -135,6 +127,7 @@ A simple web interface was created using Gradio where users can input news text.
 ## Gradio Interface
 
 ![Interface](images/gradio%20interface%201.png)
+![Interface](images/gradio%20interface%203.png)
 
 
 ## **Key Learnings**
