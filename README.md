@@ -134,7 +134,7 @@ A simple web interface was created using Gradio where users can input news text.
 
 ## Gradio Interface
 
-![Interface](images/gradiointerface1.png)
+![Interface](images/gradio%20interface%201.png)
 
 
 ## **Key Learnings**
