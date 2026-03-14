@@ -132,6 +132,10 @@ The trained model was deployed using a simple **gradio** web interface where use
 https://5fb2a85f65e8df7f68.gradio.live/
 A simple web interface was created using Gradio where users can input news text. The trained DistilBERT model processes the text and predicts whether the news is fake or real.
 
+## Gradio Interface
+
+![Interface](images/gradiointerface1.png)
+
 
 ## **Key Learnings**
 
