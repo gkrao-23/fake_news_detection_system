@@ -147,3 +147,4 @@ Deploying machine learning models with Gradio
 Building an end-to-end NLP pipeline from dataset to deployment
 
 This project demonstrates how transformer-based models can effectively detect misinformation in textual data.
+## Explanation video :-https://drive.google.com/file/d/1foUK98hN0aEL62L2Zb8S1jOmFbih_QT6/view?usp=sharing
